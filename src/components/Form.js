@@ -23,8 +23,7 @@ class Form extends React.Component {
     )){
       return true;
     } else {
-      window.alert('all fields must be completed');
-      console.log(formData);
+      window.alert('Complete all fields please. The are required');
       return false;
     }
   }
@@ -49,7 +48,13 @@ class Form extends React.Component {
         },
         method: 'POST',
         body: JSON.stringify(dataToSend),
-      }).then(response => response.json())
+      }).then(response => {
+        if(response.status === 200){
+          window.alert('Your request has been sent');
+          this.props.reset();
+          return response.json();
+        }
+      })
         .then(json => console.log(json))
         .catch(err => console.log(err));
     }
