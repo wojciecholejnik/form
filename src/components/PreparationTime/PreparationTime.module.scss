@@ -5,9 +5,10 @@
   display: flex;
   align-items: center;
   height: 50px;
+  border: none;
 
   .wrongTime {
-    color: red;
+    color: #880e1a;
   }
 
   .timeOK {
@@ -25,4 +26,8 @@
   height: 30px;
   padding: 0 10px;
   margin: 5px 15px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: white;
+  outline: none;
 }

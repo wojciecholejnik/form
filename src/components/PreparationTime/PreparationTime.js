@@ -61,7 +61,7 @@ class PreparationTime extends React.Component {
         <label
           className={this.props.state.preparation_time  ? (styles.timeOK) : styles.wrongTime}
         >
-          {this.props.state.preparation_time  ? this.props.state.preparation_time : ('00h00m00s') }<span>*write only numbers</span></label>
+          {this.props.state.preparation_time  ? this.props.state.preparation_time : ('00:00:00') }<span>*write only numbers</span></label>
       </fieldset>
     );
   }
