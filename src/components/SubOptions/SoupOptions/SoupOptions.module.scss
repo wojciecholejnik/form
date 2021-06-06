@@ -1,0 +1,20 @@
+.container {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+}
+
+input.spicinessLevelInput {
+  width: auto;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
